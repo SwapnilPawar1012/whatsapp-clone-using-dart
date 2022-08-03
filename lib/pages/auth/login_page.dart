@@ -55,7 +55,9 @@ class _LoginPageState extends State<LoginPage> {
                   fontWeight: FontWeight.w400,
                 ),
               ),
+              const SizedBox(height: 30),
               Image.asset("assets/login.png"),
+              const SizedBox(height: 50),
               TextFormField(
                 decoration: textInputDecoration.copyWith(
                   labelText: "Email",

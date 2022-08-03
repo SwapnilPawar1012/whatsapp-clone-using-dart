@@ -50,7 +50,6 @@ class DatabaseService {
       "members": FieldValue.arrayUnion(["${uid}_$userName"]),
       "groupId": groupDocumentReference.id,
     });
-
     DocumentReference userDocumentReference = userCollection.doc(uid);
     return await userDocumentReference.update({
       "groups":
@@ -123,5 +122,15 @@ class DatabaseService {
         "members": FieldValue.arrayUnion(["${uid}_$userName"])
       });
     }
+  }
+
+  // Send message
+  sendMessage(String groupId, Map<String, dynamic> chatMessageData) async {
+    groupCollection.doc(groupId).collection("messages").add(chatMessageData);
+    groupCollection.doc(groupId).update({
+      "recentMessage": chatMessageData['message'],
+      "recentMessageSender": chatMessageData['sender'],
+      "recentMessageTime": chatMessageData['time'].toString(),
+    });
   }
 }

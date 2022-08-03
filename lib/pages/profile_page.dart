@@ -5,6 +5,7 @@ import 'package:whatsapp/widgets/widgets.dart';
 import 'auth/login_page.dart';
 import 'home_page.dart';
 
+// ignore: must_be_immutable
 class ProfilePage extends StatefulWidget {
   String userName;
   String email;
@@ -45,6 +46,7 @@ class _ProfilePageState extends State<ProfilePage>
               color: Colors.white, fontSize: 27, fontWeight: FontWeight.bold),
         ),
       ),
+      
       drawer: Drawer(
         child: ListView(
           padding: const EdgeInsets.symmetric(vertical: 50),
@@ -99,8 +101,8 @@ class _ProfilePageState extends State<ProfilePage>
                     context: context,
                     builder: (context) {
                       return AlertDialog(
-                        title: Text("Logout"),
-                        content: Text("Are you sure you want to Logout?"),
+                        title: const Text("Logout"),
+                        content: const Text("Are you sure you want to Logout?"),
                         actions: [
                           IconButton(
                             onPressed: () {
@@ -139,7 +141,7 @@ class _ProfilePageState extends State<ProfilePage>
           ],
         ),
       ),
-      
+
       body: Container(
         padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 170),
         child: Column(

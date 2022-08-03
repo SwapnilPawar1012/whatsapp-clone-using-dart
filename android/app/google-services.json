@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "985926417291",
+    "project_id": "chatapp-1495f",
+    "storage_bucket": "chatapp-1495f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:985926417291:android:7a0641fa4b04f8cc5e4d8e",
+        "android_client_info": {
+          "package_name": "com.example.whatsapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "985926417291-t9uv1ktpe4o1sncic2d05poi78t7p055.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.whatsapp",
+            "certificate_hash": "0708de19fe123462f96758b87106c8ba2e1543f5"
+          }
+        },
+        {
+          "client_id": "985926417291-2pmsvbckvusvbmpe8i597sc39ht0mbrd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDNE1dpjFWYcy5AqDWsRpnVldt_SCOqlRc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "985926417291-2pmsvbckvusvbmpe8i597sc39ht0mbrd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
